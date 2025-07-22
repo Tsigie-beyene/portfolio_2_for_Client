@@ -49,7 +49,7 @@ Contact <Image src={assets.arrow_icon} alt="Arrow Icon" className="w-3"/></a>
           <Image src={assets.close_black} alt='close icon' onClick={closeMenu}
         className='w-5 cursor-pointer'/>
         </div>
-        <li><a onClick={closeMenu}  href='#top'>Home</a></li>
+        <li><a onClick={closeMenu} className='font-Ovo' href='#top'>Home</a></li>
         <li><a onClick={closeMenu} href='#about'>About Me </a></li>
         <li><a onClick={closeMenu} href='#services'>Services</a></li>
         <li><a onClick={closeMenu} href='#work'>My Work</a></li>
