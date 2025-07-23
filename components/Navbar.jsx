@@ -12,9 +12,6 @@ const Navbar = () => {
         sideMenuRef.current.style.transform= 'translateX(16rem)'
     }
 
-
-
-
   return (
     <>
     <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
@@ -26,18 +23,18 @@ const Navbar = () => {
         <Image src={assets.seid} alt='logo' className="w-28 cursor-pointer mr-14"/>
     </a>
     <ul className='hidden md:flex items-center gap-6 lg:gap-10 xl:gap-14 text-sm lg:text-base xl:text-lg font-semibold text-gray-700'>
-        <li><a href='#top'>Home</a></li>
-        <li><a href='#about'>About Me </a></li>
-        <li><a href='#services'>Services</a></li>
-        <li><a href='#work'>My Work</a></li>
-        <li><a href='#contact'>Contact Me</a></li>
+        <li><a className='hover:text-blue-500' href='#top'>Home</a></li>
+        <li><a className='hover:text-blue-500' href='#about'>About Me </a></li>
+        <li><a className='hover:text-blue-500' href='#services'>Services</a></li>
+        <li><a className='hover:text-blue-500' href='#work'>My Work</a></li>
+        <li><a className='hover:text-blue-500' href='#contact'>Contact Me</a></li>
     </ul>
     <div className='flex items-center gap-4'>
         <button>
             <Image src={assets.moon_icon} alt='moon icon' className='w-6'/>
         </button>
-        <a href="#contact" className='hidden md:flex items-center gap-3 px-10 py-2.5 border lg:text-base xl:text-lg font-semibold text-gray-700 rounded-full'>
-Contact <Image src={assets.arrow_icon} alt="Arrow Icon" className="w-3"/></a>
+        <a href="#contact" className='hidden md:flex items-center gap-3 px-10 py-2.5 border lg:text-base xl:text-lg font-semibold text-gray-700 rounded-full hover:text-blue-500'>
+Contact <Image src={assets.arrow_icon} alt="Arrow Icon" className="w-3 hover:text-blue-500"/></a>
      <button className='block md:hidden ml-3' onClick={openMenu}>
             <Image src={assets.menu_black} alt='moon icon' className='w-6'/>
         </button>  
@@ -49,11 +46,11 @@ Contact <Image src={assets.arrow_icon} alt="Arrow Icon" className="w-3"/></a>
           <Image src={assets.close_black} alt='close icon' onClick={closeMenu}
         className='w-5 cursor-pointer'/>
         </div>
-        <li><a onClick={closeMenu} className='font-Ovo' href='#top'>Home</a></li>
-        <li><a onClick={closeMenu} href='#about'>About Me </a></li>
-        <li><a onClick={closeMenu} href='#services'>Services</a></li>
-        <li><a onClick={closeMenu} href='#work'>My Work</a></li>
-        <li><a onClick={closeMenu} href='#contact'>Contact Me</a></li> 
+        <li><a onClick={closeMenu} className='hover:text-blue-500' href='#top'>Home</a></li>
+        <li><a onClick={closeMenu} className='hover:text-blue-500' href='#about'>About Me </a></li>
+        <li><a onClick={closeMenu} className='hover:text-blue-500' href='#services'>Services</a></li>
+        <li><a onClick={closeMenu} className='hover:text-blue-500' href='#work'>My Work</a></li>
+        <li><a onClick={closeMenu} className='hover:text-blue-500' href='#contact'>Contact Me</a></li> 
     </ul>
 </nav>   
    </>
