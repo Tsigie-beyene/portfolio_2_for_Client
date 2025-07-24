@@ -39,7 +39,7 @@ const Navbar = () => {
         <a href="#contact" className='hidden md:flex items-center gap-3 px-10 py-2.5 border lg:text-base xl:text-lg font-semibold text-gray-700 rounded-full hover:bg-blue-500 hover:text-white'>
 Contact <Image src={assets.arrow_icon} alt="Arrow Icon" className="w-3"/></a>
      <button className='block md:hidden ml-3' onClick={openMenu}>
-            <Image src={assets.menu_black} alt='moon icon' className='w-6 hover:text-blue-500'/>
+            <Image src={assets.menu_black} alt='moon icon' className='w-6 hover:text-white-500'/>
         </button>  
     </div> 
     {/* Mobile Menu */}
