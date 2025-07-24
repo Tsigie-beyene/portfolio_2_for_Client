@@ -12,7 +12,7 @@ const Header = () => {
             Hi! I'm Seid Fikreselassie 😊 
 
         </h3>
-        <h1 className='text-3xl lg:text-4xl xl:text-[36px] font-Ovo'>
+        <h1 className='text-2xl lg:text-4xl xl:text-[36px] font-Ovo'>
         Robotics & Control Master’s Student | Human-Robot Interaction | Mechatronics Engineer </h1>
         <p className='max-w-3xl mx-auto font-Ovo text-gray-500'>
         I’m Seid Fikreselassie, a Master’s student in Automatic Control and Robotics, with a strong background in Mechatronics and hands-on experience in human-robot interaction and intelligent control. I’m passionate about building smart, autonomous, and human-centered robotic systems. 
