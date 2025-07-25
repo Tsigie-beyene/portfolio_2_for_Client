@@ -1,9 +1,10 @@
 import { assets } from '@/assets/assets'
-import React, { use } from 'react'
+import React, { use, useEffect,useState } from 'react'
 import Image from 'next/image'
 import { useRef } from 'react'
 
 const Navbar = () => {
+    const [isScrolled,setIsScrolled] = useState(false)
     const sideMenuRef =useRef()
     const openMenu = () => {
         sideMenuRef.current.style.transform= 'translateX(-16rem)'
@@ -11,9 +12,16 @@ const Navbar = () => {
      const closeMenu = () => {
         sideMenuRef.current.style.transform= 'translateX(16rem)'
     }
-
-
-
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+            
+            if(scrollY > 50){
+                setIsScrolled(true)
+        } else{
+            setIsScrolled(false)
+        }
+    })
+    },[])
 
   return (
     <>
@@ -21,11 +29,13 @@ const Navbar = () => {
     <Image src={assets.header_bg_color} alt='header background' className='w-full' />
 
     </div>
-<nav className='w-full fixed px-5 lg:px-8 xl:px:[8%] py-4 flex items-center justify-between bg-white z-50 shadow-md'>
+<nav className={`w-full fixed px-5 lg:px-8 xl:px:[8%] py-4 flex items-center justify-between bg-white
+ z-50  ${isScrolled ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' : ''}`}>
     <a href='#top'>
         <Image src={assets.seid} alt='logo' className="w-28 cursor-pointer mr-14"/>
     </a>
-    <ul className='hidden md:flex items-center gap-6 lg:gap-10 xl:gap-14 text-sm lg:text-base xl:text-lg font-semibold text-gray-700'>
+    <ul className={`hidden md:flex items-center gap-6 lg:gap-10 xl:gap-14 text-sm lg:text-base xl:text-lg 
+    font-semibold text-gray-700 py-3 px-12 rounded-full ${isScrolled ? '' : 'bg-white bg-opacity-50 shadow-sm'}`}>
         <li><a href='#top'  className="hover:text-blue-500" >Home</a></li>
         <li><a href='#about'  className="hover:text-blue-500" >About Me </a></li>
         <li><a href='#services'  className="hover:text-blue-500" >Services</a></li>
