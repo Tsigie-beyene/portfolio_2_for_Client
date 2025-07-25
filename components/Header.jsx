@@ -8,13 +8,13 @@ const Header = () => {
         <div>
             <Image src={assets.fikiru} alt="Profile Image" className="rounded-full w-32"/>
         </div>
-        <h3 className='flex items-end gap-2 text-xl md:text-2xl font-semibold mb-3 font-ovo'>
+        <h3 className='flex items-end gap-2 text-xl md:text-2xl font-semibold mb-3 font-Ovo'>
             Hi! I'm Seid Fikreselassie 😊 
 
         </h3>
-        <h1 className='text-2xl lg:text-4xl xl:text-[36px] font-ovo'>
+        <h1 className='text-2xl lg:text-4xl xl:text-[36px] font-Ovo'>
         Robotics & Control Master’s Student | Human-Robot Interaction | Mechatronics Engineer </h1>
-        <p className='max-w-3xl mx-auto font-ovo text-gray-500'>
+        <p className='max-w-3xl mx-auto font-Ovo text-gray-500'>
         I’m Seid Fikreselassie, a Master’s student in Automatic Control and Robotics, with a strong background in Mechatronics and hands-on experience in human-robot interaction and intelligent control. I’m passionate about building smart, autonomous, and human-centered robotic systems. 
         </p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
