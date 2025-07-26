@@ -14,6 +14,7 @@ import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
 import seid from "./seid.jpg";
 import fikiru from "./fikiru.jpg";
+import fik from "./fik.jpg"
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
@@ -55,6 +56,7 @@ export const assets = {
   logo,
   seid,
   fikiru,
+  fik,
   logo_dark,
   mail_icon,
   mail_icon_dark,

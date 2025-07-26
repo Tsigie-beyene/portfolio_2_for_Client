@@ -16,13 +16,13 @@ const Work =()=>{
                 <div key={index} 
                 className='aspect-square bg-cover bg-center  rounded-lg relative cursor-pointer group'
                 style={{backgroundImage: `url(${project.bgImage})`}}>
-                    <div className='bg-white w-10/12 rounded-md absolute buttom-5 left-1/2 -translate-x-1/2
-                    py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
-                        <h2>{project.title}</h2>
-                        <p>{project.description}</p>  
-                    </div>
-                    <div>
-                        <Image src={assets.send_icon} alt="Send Icon" className='w-5'/>
+                    <div className='bg-white/90 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2
+                    py-3 px-5 flex items-center justify-between shadow-lg backdrop-blur-sm transition-all duration-500 group-hover:bottom-7'>
+                        <div>
+                            <h2 className='text-base font-semibold'>{project.title}</h2>
+                            <p className='text-sm text-gray-600'>{project.description}</p>  
+                        </div>
+                        <Image src={assets.send_icon} alt="Send Icon" className='w-5 h-5'/>
                     </div>
                 </div>
             ))}
