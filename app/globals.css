@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
-*{
-  font-family: Outfit;
+@theme {
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-dark-theme: #11001F;
+
+  --font-outfit: "Outfit", sans-serif;
+  --font-ovo: "Ovo", serif;
+
+  --shadow-custom-black: 4px 4px 0 #000;
+  --shadow-custom-white: 4px 4px 0 #fff;
+
+  --grid-cols-auto: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+/* Removed global font-family rule to allow Tailwind font utilities to work */
