@@ -19,9 +19,10 @@ const Header = () => {
         </p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
           <a href="#contact"
-          className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>
-          Contact Me 
-          <Image src={assets.right_arrow_white } alt="right arrow" className='w-4'/>
+          className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 
+          text-white rounded-full mx-auto hover:bg-black duration-500'>
+           Contact Me <Image src={assets.right_arrow_white} alt="Right Arrow" className='w-4' /> 
+
           </a>
           <a href="sample-resume.pdf" download 
           className='px-10 py-3 border border rounded-full border-gray-500 flex items-center gap-2 hover:bg-light-hover hover:text-blue-500'>
