@@ -24,12 +24,12 @@ const Work =()=>{
                 style={{backgroundImage: `url(${project.bgImage})`}}>
                     <div className={`w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2
                     py-3 px-5 flex items-center justify-between shadow-lg backdrop-blur-sm transition-all duration-500 group-hover:bottom-7
-                    ${isDarkMode ? 'bg-dark-theme/90' : 'bg-white/90'}`}>
+                    ${isDarkMode ? 'bg-white/80' : 'bg-white/90'}`}>
                         <div >
                             <h2 className={`text-base font-semibold transition-colors duration-300
-                            ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>{project.title}</h2>
+                            ${isDarkMode ? 'text-gray-900' : 'text-gray-800'}`}>{project.title}</h2>
                             <p className={`text-sm transition-colors duration-300
-                            ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>{project.description}</p>  
+                            ${isDarkMode ? 'text-gray-700' : 'text-gray-700'}`}>{project.description}</p>  
                         </div >
                         <div className={`border rounded-full w-9 aspect-square flex items-center justify-center
                         transition-all duration-300 group-hover:bg-lime-300
