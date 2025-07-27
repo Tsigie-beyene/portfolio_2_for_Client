@@ -53,11 +53,11 @@ ${isDarkMode
     font-semibold py-3 px-12 rounded-full transition-all duration-300
     ${isDarkMode 
       ? isScrolled 
-        ? 'text-white bg-dark-theme bg-opacity-50'
-        : 'text-white bg-dark-theme bg-opacity-50 shadow-sm'
+        ? 'text-white bg-dark-theme bg-opacity-50' // dark, scrolled: no border
+        : 'text-white bg-dark-theme bg-opacity-50 shadow-sm border border-white rounded-full' // dark, top: border
       : isScrolled 
-        ? 'text-gray-700 bg-white bg-opacity-50'
-        : 'text-gray-700 bg-white bg-opacity-50 shadow-sm'
+        ? 'text-gray-700 bg-white bg-opacity-50' // light, scrolled
+        : 'text-gray-700 bg-white bg-opacity-50 shadow-sm' // light, top
     }`}>
         <li><a href='#top' className={`hover:text-blue-500 transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>Home</a></li>
         <li><a href='#about' className={`hover:text-blue-500 transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>About Me </a></li>
