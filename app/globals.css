@@ -15,3 +15,48 @@
 }
 
 /* Removed global font-family rule to allow Tailwind font utilities to work */
+
+/* Dark mode styles */
+.dark {
+  background-color: #11001F;
+  color: white;
+}
+
+.dark body {
+  background-color: #11001F;
+  color: white;
+}
+
+/* Dark mode transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode utility classes */
+.dark .bg-dark-theme {
+  background-color: #11001F;
+}
+
+.dark .text-white {
+  color: white;
+}
+
+.dark .text-gray-300 {
+  color: #d1d5db;
+}
+
+.dark .text-gray-600 {
+  color: #4b5563;
+}
+
+.dark .border-gray-600 {
+  border-color: #4b5563;
+}
+
+.dark .hover\:bg-dark-hover:hover {
+  background-color: #2a004a;
+}
+
+.dark .hover\:shadow-custom-white:hover {
+  box-shadow: 4px 4px 0 #fff;
+}
