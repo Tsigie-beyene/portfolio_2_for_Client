@@ -51,7 +51,7 @@ const Footer = () => {
           className={`transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}
           variants={fadeUp}
         >
-          © 2025 Seid Fikireselassie Eshetu. All rights reserved.
+          © 2025 Seid Fikireselassie. All rights reserved.
         </motion.p>
         <motion.ul
           className='flex items-center justify-center gap-10 mt-4 sm:mt-0'

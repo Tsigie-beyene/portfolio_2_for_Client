@@ -52,7 +52,7 @@ const about = () => {
       >
         About Me
       </motion.h2>
-      <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+      <div className='flex w-full flex-col lg:flex-row items-center gap-15 my-10'>
         <motion.div
           className='w-64 sm:w-80 rounded-3xl max-w-none'
           variants={fadeLeft}
@@ -64,7 +64,10 @@ const about = () => {
             className={`mb-10 max-w-2xl font-Ovo transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}
             variants={fadeUp}
           >
-            I'm Seid Fikreselassie, a Master's student in Automatic Control and Robotics, with a strong background in Mechatronics and hands-on experience in human-robot interaction and intelligent control. I'm passionate about building smart, autonomous, and human-centered robotic systems.
+I am a dedicated Mechatronics Engineer with a strong background in robotics, automation, and advanced control systems. My experience
+spans mechanical design, electronics, and software integration, enabling me to tackle complex technical challenges. I value continuous
+learning, teamwork, and creativity, striving to deliver innovative solutions in every project. With an eye for detail and a commitment to
+excellence, I thrive on pushing boundaries to achieve success.
           </motion.p>
           <motion.ul
             className='grid grid-cols-1 sm:grid-cols-3 gap-6 '

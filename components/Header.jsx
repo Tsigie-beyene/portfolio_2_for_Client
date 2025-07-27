@@ -66,7 +66,7 @@ const Header = () => {
           Contact Me <Image src={assets.right_arrow_white} alt="Right Arrow" className='w-4' />
         </motion.a>
         <motion.a
-          href="sample-resume.pdf" download
+          href="seid_cv.pdf" download
           className={`py-3 px-8 flex items-center justify-center gap-2 rounded-full transition-all duration-300 ${isDarkMode ? 'bg-white text-gray-800 hover:bg-gray-100 hover:scale-105 hover:shadow-lg' : 'border border-gray-500 text-gray-700 hover:bg-light-hover hover:text-blue-500'}`}
           variants={fadeUp}
           whileHover={{ scale: 1.07 }}
