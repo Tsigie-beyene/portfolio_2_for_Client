@@ -92,23 +92,43 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    title: "iPID vs. PID Control",
+    description: "Aerospace System Control",
     bgImage: "/work-1.png",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Joint Attention HRI",
+    description: "Humanoid Robot Interaction",
     bgImage: "/work-2.png",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Reverse Vending Machine",
+    description: "Eco-friendly Recycling System",
     bgImage: "/work-3.png",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "QR-Based Sorting Arm",
+    description: "Robotic Item Identification",
+    bgImage: "/work-4.png",
+  },
+  {
+    title: "Light Tracking Robot",
+    description: "Neural Network Control",
+    bgImage: "/work-1.png",
+  },
+  {
+    title: "Adaptive Aircraft Control",
+    description: "Real-time MIAC Design",
+    bgImage: "/work-2.png",
+  },
+  {
+    title: "Pick-and-Place Arm",
+    description: "Bluetooth Robotic Control",
+    bgImage: "/work-3.png",
+  },
+  {
+    title: "Snake Tracking System",
+    description: "Particle Filter Algorithm",
     bgImage: "/work-4.png",
   },
 ];
@@ -117,27 +137,27 @@ export const serviceData = [
   {
     icon: assets.robotics,
     title: "Robotics & Control System Design",
-    description: "Custom solutions in autonomous systems, adaptive control, and HRI...",
+    description: "Advanced control algorithms, PID/iPID systems, adaptive control for aerospace applications, and autonomous robotic systems.",
     link: "",
   },
   {
     icon: assets.chip,
     title: "Embedded Systems & Automation",
     description:
-      "Development with Arduino, Raspberry Pi, PLCs, and real-time control systems...",
+      "Real-time control systems, Arduino/Raspberry Pi development, PLC programming, and industrial automation solutions.",
     link: "",
   },
   {
     icon: assets.prototype,
     title: "Research & Prototyping Support",
     description:
-      "Assistance in academic or industrial R&D projects related to robotics and AI...",
+      "Academic and industrial R&D in robotics, computer vision, machine learning, and aerospace control systems.",
     link: "",
   },
   {
     icon: assets.training,
     title: "Technical Training & Mentorship",
-    description: "Teaching and guidance in Mechatronics, ROS2, MATLAB/Simulink, and Python...",
+    description: "Expert guidance in Mechatronics, ROS2, MATLAB/Simulink, Python, and advanced control theory.",
     link: "",
   },
 ];
@@ -164,9 +184,9 @@ export const infoList = [
 ];
 
 export const toolsData = [
-  assets.vscode,
-  assets.firebase,
-  assets.mongodb,
-  assets.figma,
+  assets.robotics,
+  assets.chip,
+  assets.prototype,
+  assets.training,
   assets.git,
 ];

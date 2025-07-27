@@ -46,8 +46,8 @@ const Work =()=>{
             className={`text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}
             variants={fadeUp}
           >
-            Welcome to my web development portfolio! Explore a collection of
-            projects that showcase my skills and expertise in Mechatronics Engineering.
+            Welcome to my robotics and aerospace engineering portfolio! Explore a collection of
+            projects that showcase my expertise in control systems, human-robot interaction, and autonomous systems.
           </motion.p>
           <motion.div
             className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'
@@ -70,7 +70,7 @@ const Work =()=>{
                     ? 'border-white shadow-[2px_2px_0_#fff]' 
                     : 'border-black shadow-[2px_2px_0_#000]'
                   }`}>
-                    <Image src={assets.send_icon} alt="Send Icon" className='w-5 h-5'/>
+                    <Image src={assets.send_icon} alt="GitHub" className='w-5 h-5'/>
                   </div>
                 </div>
               </motion.div>
@@ -85,7 +85,7 @@ const Work =()=>{
             variants={fadeUp}
             whileHover={{ scale: 1.07 }}
           >
-            Show More <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt="Right Arrow"/>
+            View All Projects <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt="Right Arrow"/>
           </motion.a>
         </motion.div>
     )
