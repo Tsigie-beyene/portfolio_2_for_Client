@@ -114,22 +114,22 @@ export const workData = [
   {
     title: "iPID vs. PID Control",
     description: "Aerospace System Control",
-    bgImage: "/work-1.png",
+    bgImage: "/pid.jpg",
   },
   {
     title: "Joint Attention HRI",
     description: "Humanoid Robot Interaction",
-    bgImage: "/work-2.png",
+    bgImage: "/joint.jpg",
   },
   {
     title: "Reverse Vending Machine",
     description: "Eco-friendly Recycling System",
-    bgImage: "/work-3.png",
+    bgImage: "/bending.jpg",
   },
   {
     title: "QR-Based Sorting Arm",
     description: "Robotic Item Identification",
-    bgImage: "/work-4.png",
+    bgImage: "/arm.jpg",
   },
   {
     title: "Light Tracking Robot",
