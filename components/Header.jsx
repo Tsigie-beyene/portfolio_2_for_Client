@@ -25,16 +25,19 @@ const Header = () => {
         </p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
           <a href="#contact"
-          className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 
-          text-white rounded-full mx-auto hover:bg-black duration-500 transition-all'>
+          className={`py-3 px-8 flex items-center justify-center gap-2 rounded-full transition-all duration-300
+          ${isDarkMode 
+            ? 'bg-dark-theme border border-white text-white hover:bg-dark-hover' 
+            : 'bg-black/80 text-white hover:bg-black'
+          }`}>
            Contact Me <Image src={assets.right_arrow_white} alt="Right Arrow" className='w-4' /> 
 
           </a>
           <a href="sample-resume.pdf" download 
-          className={`px-10 py-3 border rounded-full flex items-center gap-2 transition-all duration-300
+          className={`py-3 px-8 flex items-center justify-center gap-2 rounded-full transition-all duration-300
           ${isDarkMode 
-            ? 'border-white text-white hover:bg-dark-hover hover:text-blue-400' 
-            : 'border-gray-500 text-gray-700 hover:bg-light-hover hover:text-blue-500'
+            ? 'bg-white text-gray-800 hover:bg-gray-100 hover:scale-105 hover:shadow-lg' 
+            : 'border border-gray-500 text-gray-700 hover:bg-light-hover hover:text-blue-500'
           }`}>
             My Resume <Image src={assets.download_icon} alt="Download Icon" className='w-4'/>
           </a>
