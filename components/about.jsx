@@ -77,7 +77,7 @@ excellence, I thrive on pushing boundaries to achieve success.
               <motion.div
                 className={`flex-1 border-[0.5px] rounded-xl p-6 cursor-pointer transition-all duration-500 hover:-translate-y-1 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover hover:shadow-custom-white' : 'border-gray-400 hover:bg-light-hover hover:shadow-custom-black'}`}
                 variants={fadeUp}
-                whileHover={{ scale: 1.04, boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }}
+                whileHover={{ scale: 1.04 }}
               >
                 <Image src={isDarkMode ? infoList[0].iconDark : infoList[0].icon} alt={infoList[0].title} className='w-7 mt-3'/>
                 <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{infoList[0].title}</h3>
@@ -87,7 +87,7 @@ excellence, I thrive on pushing boundaries to achieve success.
               <motion.div
                 className={`flex-1 border-[0.5px] rounded-xl p-6 cursor-pointer transition-all duration-500 hover:-translate-y-1 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover hover:shadow-custom-white' : 'border-gray-400 hover:bg-light-hover hover:shadow-custom-black'}`}
                 variants={fadeUp}
-                whileHover={{ scale: 1.04, boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }}
+                whileHover={{ scale: 1.04 }}
               >
                 <Image src={isDarkMode ? infoList[2].iconDark : infoList[2].icon} alt={infoList[2].title} className='w-7 mt-3'/>
                 <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{infoList[2].title}</h3>
@@ -98,7 +98,7 @@ excellence, I thrive on pushing boundaries to achieve success.
             <motion.div
               className={`sm:col-span-2 border-[0.5px] rounded-xl p-6 cursor-pointer transition-all duration-500 hover:-translate-y-1 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover hover:shadow-custom-white' : 'border-gray-400 hover:bg-light-hover hover:shadow-custom-black'}`}
               variants={fadeUp}
-              whileHover={{ scale: 1.04, boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }}
+              whileHover={{ scale: 1.04 }}
             >
               <Image src={isDarkMode ? infoList[1].iconDark : infoList[1].icon} alt={infoList[1].title} className='w-7 mt-3'/>
               <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{infoList[1].title}</h3>

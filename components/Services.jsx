@@ -60,7 +60,7 @@ const Services = () => {
               : 'border-gray-400 hover:bg-light-hover hover:shadow-custom-black'
             }`}
             variants={fadeUp}
-            whileHover={{ scale: 1.04, boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }}
+            whileHover={{ scale: 1.04 }}
           >
             <Image src={icon} alt={icon} className='w-10'/>
             <h3 className={`text-lg my-4 transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{title}</h3>
