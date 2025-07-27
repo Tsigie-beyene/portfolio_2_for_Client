@@ -131,15 +131,16 @@ export const workData = [
     description: "Robotic Item Identification",
     bgImage: "/arm.jpg",
   },
-  {
-    title: "Light Tracking Robot",
-    description: "Neural Network Control",
-    bgImage: "/work-1.png",
-  },
+  
   {
     title: "Adaptive Aircraft Control",
     description: "Real-time MIAC Design",
-    bgImage: "/work-2.png",
+    bgImage: "/track.jpg",
+  },
+  {
+    title: "Light Tracking Robot",
+    description: "Neural Network Control",
+    bgImage: "/robot.jpg",
   },
   {
     title: "Pick-and-Place Arm",
