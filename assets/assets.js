@@ -15,6 +15,10 @@ import logo from "./logo.png";
 import seid from "./seid.jpg";
 import fikiru from "./fikiru.jpg";
 import fik from "./fik.jpg"
+import robotics from "./robotics.png";
+import chip from "./chip.png";
+import prototype from "./prototype.png";
+import training from "./training.png";
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
@@ -57,6 +61,10 @@ export const assets = {
   seid,
   fikiru,
   fik,
+  robotics,
+  chip,
+  training,
+  prototype,
   logo_dark,
   mail_icon,
   mail_icon_dark,
@@ -107,29 +115,29 @@ export const workData = [
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
+    icon: assets.robotics,
+    title: "Robotics & Control System Design",
+    description: "Custom solutions in autonomous systems, adaptive control, and HRI...",
     link: "",
   },
   {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: assets.chip,
+    title: "Embedded Systems & Automation",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Development with Arduino, Raspberry Pi, PLCs, and real-time control systems...",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: assets.prototype,
+    title: "Research & Prototyping Support",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "Assistance in academic or industrial R&D projects related to robotics and AI...",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: assets.training,
+    title: "Technical Training & Mentorship",
+    description: "Teaching and guidance in Mechatronics, ROS2, MATLAB/Simulink, and Python...",
     link: "",
   },
 ];
