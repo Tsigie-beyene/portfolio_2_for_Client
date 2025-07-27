@@ -81,7 +81,11 @@ excellence, I thrive on pushing boundaries to achieve success.
               >
                 <Image src={isDarkMode ? infoList[0].iconDark : infoList[0].icon} alt={infoList[0].title} className='w-7 mt-3'/>
                 <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{infoList[0].title}</h3>
-                <p className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{infoList[0].description}</p>
+                <ul className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} list-disc pl-5`}>
+                  <li>Amharic (Native)</li>
+                  <li>English (B2 - Upper Intermediate)</li>
+                  <li>French (A1 - Beginner)</li>
+                </ul>
               </motion.div>
               {/* Projects */}
               <motion.div
@@ -91,7 +95,9 @@ excellence, I thrive on pushing boundaries to achieve success.
               >
                 <Image src={isDarkMode ? infoList[2].iconDark : infoList[2].icon} alt={infoList[2].title} className='w-7 mt-3'/>
                 <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{infoList[2].title}</h3>
-                <p className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{infoList[2].description}</p>
+                <ul className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} list-disc pl-5`}>
+                  <li>Built more than 5 projects</li>
+                </ul>
               </motion.div>
             </div>
             {/* Second row: Education (spans both columns) */}
@@ -102,7 +108,10 @@ excellence, I thrive on pushing boundaries to achieve success.
             >
               <Image src={isDarkMode ? infoList[1].iconDark : infoList[1].icon} alt={infoList[1].title} className='w-7 mt-3'/>
               <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{infoList[1].title}</h3>
-              <p className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{infoList[1].description}</p>
+              <ul className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} list-disc pl-5`}>
+                <li>Double Degree MSc in Automatic Control and Robotics<br/>Université Évry Paris-Saclay (France) & Poznan University of Technology (Poland), 2024–Present</li>
+                <li>BSc in Mechatronics Engineering<br/>Wollo University – Kombolcha Institute of Technology (Ethiopia), 2016–2021<br/>Graduated with Gold Medal Honors</li>
+              </ul>
             </motion.div>
           </div>
           <motion.h4
