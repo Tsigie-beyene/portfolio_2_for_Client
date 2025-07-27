@@ -8,7 +8,7 @@ const Contact = () => {
   
   return (
     <div id="contact" className='w-full px-[12%] py-10 scroll-mt-20'>
-        <h2 className={`text-center text-5xl font-Ovo mb-4 transition-colors duration-300
+        <h2 className={`text-center text-3xl md:text-4xl lg:text-5xl font-Ovo mb-4 transition-colors duration-300
         ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Get In Touch</h2>
         <p className={`text-center max-w-2xl mx-auto mb-12 font-Ovo transition-colors duration-300
         ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>

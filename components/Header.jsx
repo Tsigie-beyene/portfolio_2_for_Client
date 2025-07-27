@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className='w-11/12 max-w-3xl mx-auto text-center max-auto h-screen flex flex-col justify-center items-center gap-4'>
         <div>
-            <Image src={assets.fik} alt="Profile Image" className="rounded-full w-32"/>
+            <Image src={assets.fik} alt="Profile Image" className="rounded-full w-32 mt-25 lg:mt-15"/>
         </div>
         <h3 className={`flex items-end gap-2 text-xl md:text-2xl font-semibold mb-3 font-Ovo transition-colors duration-300
         ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
@@ -21,7 +21,7 @@ const Header = () => {
         Robotics & Control Master's Student | Human-Robot Interaction | Mechatronics Engineer </h1>
         <p className={`max-w-3xl mx-auto font-Ovo transition-colors duration-300
         ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-        I'm Seid Fikreselassie, a Master's student in Automatic Control and Robotics, with a strong background in Mechatronics and hands-on experience in human-robot interaction and intelligent control. I'm passionate about building smart, autonomous, and human-centered robotic systems. 
+        I am a robotics engineer from Ethiopia with experience in research labs and academia across France, Poland, and Japan.
         </p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
           <a href="#contact"

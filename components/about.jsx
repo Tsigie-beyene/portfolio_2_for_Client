@@ -7,11 +7,11 @@ const about = () => {
   const { isDarkMode } = useTheme()
   
   return (
-    <div id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
-        <h4 className={`text-center mb-2 text-lg font-Ovo transition-colors duration-300
+    <div id='about' className='w-full px-[12%] py-20 scroll-mt-20'>
+        <h4 className={`hidden md:block text-center mb-2 text-lg font-Ovo transition-colors duration-300
         ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Introduction</h4>
-        <h2 className={`text-center text-5xl font-Ovo transition-colors duration-300
-        ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>About Me</h2>
+        <h2 className={`text-center text-3xl md:text-4xl lg:text-5xl font-Ovo transition-colors duration-300
+        ${isDarkMode ? 'text-white' :'text-gray-800'}`}>About Me</h2>
         <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
             <div className='w-64 sm:w-80 rounded-3xl max-w-none'>
                <Image src={assets.fik} alt="user" 
