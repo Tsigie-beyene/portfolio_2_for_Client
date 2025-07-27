@@ -44,8 +44,12 @@ ${isScrolled
     : 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' 
   : ''
 }`}>
-    <a href='#top'>
-        <Image src={assets.seid} alt='logo' className="w-28 cursor-pointer mr-14"/>
+    <a href='#top' className="flex items-center gap-1">
+        <span className={`text-2xl font-bold transition-colors duration-300
+        ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
+          Seid
+        </span>
+        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
     </a>
     <ul className={`hidden md:flex items-center gap-6 lg:gap-10 xl:gap-14 text-sm lg:text-base xl:text-lg 
     font-semibold py-3 px-12 rounded-full transition-all duration-300

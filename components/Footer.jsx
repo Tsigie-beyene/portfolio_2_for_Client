@@ -9,7 +9,13 @@ const Footer = () => {
   return (
     <div className='mt-20'>
         <div className='text-center'>
-            <Image src={assets.seid} alt="logo" className="w-32 mx-auto mb-2"/>
+            <div className="flex items-center justify-center gap-1 mb-2">
+                <span className={`text-2xl font-bold transition-colors duration-300
+                ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
+                  Seid
+                </span>
+                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+            </div>
             <div className='w-max flex items-center gap-2 mx-auto'>
             <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt="mail icon" className="w-6"/>
             <span className={`transition-colors duration-300
