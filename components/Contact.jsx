@@ -19,21 +19,21 @@ const Contact = () => {
             <input type="text" placeholder='Enter your name' required 
             className={`w-full p-4 outline-none border rounded-lg transition-all duration-300
             ${isDarkMode 
-              ? 'border-gray-600 bg-dark-theme text-white placeholder-gray-400' 
-              : 'border-gray-400 bg-white text-gray-800 placeholder-gray-500'
+              ? 'border-gray-300 bg-dark-hover text-white placeholder-gray-300' 
+              : 'border-gray-400 bg-light-hover text-gray-800 placeholder-gray-500'
             }`} />
             <input type="email" placeholder='Enter your email' required 
             className={`w-full p-4 outline-none border rounded-lg transition-all duration-300
             ${isDarkMode 
-              ? 'border-gray-600 bg-dark-theme text-white placeholder-gray-400' 
-              : 'border-gray-400 bg-white text-gray-800 placeholder-gray-500'
+              ? 'border-gray-300 bg-dark-hover text-white placeholder-gray-300' 
+              : 'border-gray-400 bg-light-hover text-gray-800 placeholder-gray-500'
             }`} />
            </div>
            <textarea rows={6} placeholder='Enter your message' required 
            className={`w-full p-4 outline-none border rounded-lg mb-8 transition-all duration-300
            ${isDarkMode 
-             ? 'border-gray-600 bg-dark-theme text-white placeholder-gray-400' 
-             : 'border-gray-400 bg-white text-gray-800 placeholder-gray-500'
+             ? 'border-gray-300 bg-dark-hover text-white placeholder-gray-300' 
+             : 'border-gray-400 bg-light-hover text-gray-800 placeholder-gray-500'
            }`}/>
            <div className='text-center'>
              <button type='submit' className={`py-3 px-8 flex items-center justify-center gap-2 mx-auto rounded-full transition-all duration-300
