@@ -69,25 +69,42 @@ spans mechanical design, electronics, and software integration, enabling me to t
 learning, teamwork, and creativity, striving to deliver innovative solutions in every project. With an eye for detail and a commitment to
 excellence, I thrive on pushing boundaries to achieve success.
           </motion.p>
-          <motion.ul
-            className='grid grid-cols-1 sm:grid-cols-3 gap-6 '
-            variants={container}
-            initial='hidden'
-            animate={isInView ? 'show' : 'hidden'}
-          >
-            {infoList.map(({ icon,iconDark,title,description},index)=>(
-              <motion.li
-                key={index}
-                className={`border-[0.5px] rounded-xl p-6 cursor-pointer transition-all duration-500 hover:-translate-y-1 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover hover:shadow-custom-white' : 'border-gray-400 hover:bg-light-hover hover:shadow-custom-black'}`}
+          {/* Info Cards Section - Responsive Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* First row: Languages and Projects */}
+            <div className="flex flex-col gap-6 sm:flex-row sm:col-span-2">
+              {/* Languages */}
+              <motion.div
+                className={`flex-1 border-[0.5px] rounded-xl p-6 cursor-pointer transition-all duration-500 hover:-translate-y-1 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover hover:shadow-custom-white' : 'border-gray-400 hover:bg-light-hover hover:shadow-custom-black'}`}
                 variants={fadeUp}
                 whileHover={{ scale: 1.04, boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }}
               >
-                <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3'/>
-                <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{title}</h3>
-                <p className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{description}</p>
-              </motion.li>
-            ))}
-          </motion.ul>
+                <Image src={isDarkMode ? infoList[0].iconDark : infoList[0].icon} alt={infoList[0].title} className='w-7 mt-3'/>
+                <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{infoList[0].title}</h3>
+                <p className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{infoList[0].description}</p>
+              </motion.div>
+              {/* Projects */}
+              <motion.div
+                className={`flex-1 border-[0.5px] rounded-xl p-6 cursor-pointer transition-all duration-500 hover:-translate-y-1 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover hover:shadow-custom-white' : 'border-gray-400 hover:bg-light-hover hover:shadow-custom-black'}`}
+                variants={fadeUp}
+                whileHover={{ scale: 1.04, boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }}
+              >
+                <Image src={isDarkMode ? infoList[2].iconDark : infoList[2].icon} alt={infoList[2].title} className='w-7 mt-3'/>
+                <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{infoList[2].title}</h3>
+                <p className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{infoList[2].description}</p>
+              </motion.div>
+            </div>
+            {/* Second row: Education (spans both columns) */}
+            <motion.div
+              className={`sm:col-span-2 border-[0.5px] rounded-xl p-6 cursor-pointer transition-all duration-500 hover:-translate-y-1 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover hover:shadow-custom-white' : 'border-gray-400 hover:bg-light-hover hover:shadow-custom-black'}`}
+              variants={fadeUp}
+              whileHover={{ scale: 1.04, boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }}
+            >
+              <Image src={isDarkMode ? infoList[1].iconDark : infoList[1].icon} alt={infoList[1].title} className='w-7 mt-3'/>
+              <h3 className={`my-4 font-semibold transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}>{infoList[1].title}</h3>
+              <p className={`text-sm transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{infoList[1].description}</p>
+            </motion.div>
+          </div>
           <motion.h4
             className={`my-6 font-Ovo transition-colors duration-300 ${isDarkMode ? 'text-white' : 'text-gray-700'}`}
             variants={fadeUp}

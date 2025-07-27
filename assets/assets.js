@@ -139,13 +139,13 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
+    description: "Amharic(Native), English (B2 - Upper Intermediate), French (A1 - Beginner)",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description: "Double Degree MSc in Automatic Control and Robotics Université Évry Paris-Saclay (France) & Poznan University of Technology (Poland), 2024–PresentBSc in Mechatronics Engineering Wollo University – Kombolcha Institute of Technology (Ethiopia), 2016–2021 Graduated with Gold Medal Honors",
   },
   {
     icon: assets.project_icon,
