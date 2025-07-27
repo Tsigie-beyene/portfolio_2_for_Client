@@ -46,8 +46,7 @@ const Services = () => {
         className={`text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}
         variants={fadeUp}
       >
-        I am a Mechatronics Engineer
-      </motion.p>
+I offer services in robotics system design, embedded automation, and AI-driven control solutions. I also support research and prototyping for academic or industrial projects, and provide technical training in robotics, MATLAB, ROS, and embedded systems.      </motion.p>
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-10"
         variants={container}
