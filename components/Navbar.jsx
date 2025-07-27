@@ -40,7 +40,7 @@ ${isDarkMode
 } 
 ${isScrolled 
   ? isDarkMode 
-    ? 'bg-dark-theme bg-opacity-50 backdrop-blur-lg shadow-sm' 
+    ? 'bg-dark-theme bg-opacity-50 backdrop-blur-lg shadow-sm border-b border-gray-700' 
     : 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' 
   : ''
 }`}>
