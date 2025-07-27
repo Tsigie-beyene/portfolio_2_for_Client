@@ -120,23 +120,94 @@ excellence, I thrive on pushing boundaries to achieve success.
           >
             Tools I Use
           </motion.h4>
-          <motion.ul
-            className='flex items-center gap-3 sm:gap-5'
-            variants={container}
-            initial='hidden'
-            animate={isInView ? 'show' : 'hidden'}
-          >
-            {toolsData.map((tool,index)=>(
-              <motion.li
-                className={`flex items-center justify-center w-12 sm:w-14 aspect-square border rounded-lg cursor-pointer hover:-translate-y-1 transition-all duration-500 ${isDarkMode ? 'border-gray-600' : 'border-gray-400'}`}
-                key={index}
-                variants={fadeUp}
-                whileHover={{ scale: 1.08 }}
-              >
-                <Image src={tool} alt={tool} className='w-5 sm:w-7'/>
-              </motion.li>
-            ))}
-          </motion.ul>
+          
+          {/* Programming Languages */}
+          <motion.div variants={fadeUp} className="mb-6">
+            <h5 className={`text-sm font-semibold mb-3 transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              Programming Languages
+            </h5>
+            <div className='flex items-center gap-3 sm:gap-4 flex-wrap'>
+              {toolsData.filter(tool => tool.category === "Programming").map((tool, index) => (
+                <motion.div
+                  key={index}
+                  className={`flex items-center gap-2 px-3 py-2 border rounded-lg cursor-pointer hover:-translate-y-1 transition-all duration-500 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover' : 'border-gray-400 hover:bg-light-hover'}`}
+                  variants={fadeUp}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Image src={tool.icon} alt={tool.name} className='w-4 h-4'/>
+                  <span className={`text-sm font-medium transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    {tool.name}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Robotics Tools */}
+          <motion.div variants={fadeUp} className="mb-6">
+            <h5 className={`text-sm font-semibold mb-3 transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              Robotics Tools
+            </h5>
+            <div className='flex items-center gap-3 sm:gap-4 flex-wrap'>
+              {toolsData.filter(tool => tool.category === "Robotics").map((tool, index) => (
+                <motion.div
+                  key={index}
+                  className={`flex items-center gap-2 px-3 py-2 border rounded-lg cursor-pointer hover:-translate-y-1 transition-all duration-500 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover' : 'border-gray-400 hover:bg-light-hover'}`}
+                  variants={fadeUp}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Image src={tool.icon} alt={tool.name} className='w-4 h-4'/>
+                  <span className={`text-sm font-medium transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    {tool.name}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Hardware */}
+          <motion.div variants={fadeUp} className="mb-6">
+            <h5 className={`text-sm font-semibold mb-3 transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              Hardware
+            </h5>
+            <div className='flex items-center gap-3 sm:gap-4 flex-wrap'>
+              {toolsData.filter(tool => tool.category === "Hardware").map((tool, index) => (
+                <motion.div
+                  key={index}
+                  className={`flex items-center gap-2 px-3 py-2 border rounded-lg cursor-pointer hover:-translate-y-1 transition-all duration-500 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover' : 'border-gray-400 hover:bg-light-hover'}`}
+                  variants={fadeUp}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Image src={tool.icon} alt={tool.name} className='w-4 h-4'/>
+                  <span className={`text-sm font-medium transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    {tool.name}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Design Tools */}
+          <motion.div variants={fadeUp} className="mb-6">
+            <h5 className={`text-sm font-semibold mb-3 transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              Design Tools
+            </h5>
+            <div className='flex items-center gap-3 sm:gap-4 flex-wrap'>
+              {toolsData.filter(tool => tool.category === "Design").map((tool, index) => (
+                <motion.div
+                  key={index}
+                  className={`flex items-center gap-2 px-3 py-2 border rounded-lg cursor-pointer hover:-translate-y-1 transition-all duration-500 ${isDarkMode ? 'border-gray-600 hover:bg-dark-hover' : 'border-gray-400 hover:bg-light-hover'}`}
+                  variants={fadeUp}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Image src={tool.icon} alt={tool.name} className='w-4 h-4'/>
+                  <span className={`text-sm font-medium transition-colors duration-300 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    {tool.name}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </motion.div>

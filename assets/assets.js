@@ -19,6 +19,16 @@ import robotics from "./robotics.png";
 import chip from "./chip.png";
 import prototype from "./prototype.png";
 import training from "./training.png";
+import arduino from "./arduino.png";
+import cnc from "./cnc.png";
+import c from "./c.png";
+import code from "./code.png";
+import solidwork from "./solidwork.png";
+import python from "./python.png";
+import tensorflow from "./tensorflow.png";
+import raspberry from "./raspberry.png";
+import matlab from "./matlab.png";
+import opencv from "./opencv.png";
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
@@ -61,6 +71,16 @@ export const assets = {
   seid,
   fikiru,
   fik,
+  arduino,
+  raspberry,
+  code,
+  cnc,
+  c,
+  solidwork,
+  python,
+  tensorflow,
+  matlab,
+  opencv,
   robotics,
   chip,
   training,
@@ -184,9 +204,26 @@ export const infoList = [
 ];
 
 export const toolsData = [
-  assets.robotics,
-  assets.chip,
-  assets.prototype,
-  assets.training,
-  assets.git,
+  // Programming Languages
+  { name: "MATLAB", category: "Programming", icon: assets.matlab },
+  { name: "Python", category: "Programming", icon: assets.python},
+  { name: "C", category: "Programming", icon: assets.c },
+  { name: "PLC", category: "Programming", icon: assets.chip },
+  
+  // Robotics Tools
+  { name: "ROS2", category: "Robotics", icon: assets.robotics },
+  { name: "OpenCV", category: "Robotics", icon: assets.opencv },
+  { name: "Gazebo", category: "Robotics", icon: assets.robotics },
+  { name: "TensorFlow", category: "Robotics", icon: assets.tensorflow },
+  { name: "Keras", category: "Robotics", icon: assets.prototype },
+  
+  // Hardware
+  { name: "Arduino", category: "Hardware", icon: assets.arduino},
+  { name: "Raspberry Pi", category: "Hardware", icon: assets.raspberry },
+  { name: "CNC", category: "Hardware", icon: assets.training },
+  { name: "HMI", category: "Hardware", icon: assets.training },
+  
+  // Design Tools
+  { name: "SolidWorks", category: "Design", icon: assets.solidwork },
+  { name: "Simulink", category: "Design", icon: assets.prototype },
 ];
